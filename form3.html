@@ -1,0 +1,50 @@
+<div>
+    <form action="submit">
+        <table>
+
+            <tr>
+                <td><label for="mobile">Mobile No:</label></td>
+                <td>
+                    <input type="text"
+                    id="mobile"
+                    required
+                    placeholder="Enter 10 digit mobile number"
+                    pattern="[6-9][0-9]{9}"
+                    title="Enter 10 digit mobile number starting with 6, 7, 8, or 9">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="vehicle">Vehicle Registration Number:</label></td>
+                <td>
+                    <input type="text"
+                    id="vehicle"
+                    required
+                    placeholder="Enter Vehicle Registration Number"
+                    pattern="^KA\s?(0[1-9]|[1-6][0-9]|70)\s?[A-Za-z]{1,2}\s?[0-9]{4}$"
+                    title="Format: KA XX AA 0000 (Example: KA 05 AB 1234)">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td>
+                    <input type="text"
+                    id="username"
+                    required
+                    placeholder="Enter Your Username"
+                    pattern="(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*?&])[A-Za-z0-9@$!%*?&]{6,}"
+                    title="Minimum 6 characters, must contain 1 uppercase letter, 1 number, and 1 special character">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Get Details">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</div>

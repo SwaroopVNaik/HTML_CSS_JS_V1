@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit">
+
+        <div>
+        <label for="">Email :</label>
+        <input type="Email" required>
+
+        <br>
+        <br>
+
+        <!-- min and max for number type data/ value -->
+        <label for="">Mobile :</label>
+        <input type="number" required placeholder="Enter 10 - digit mobile Number">
+
+        <br>
+        <br>
+
+        <!-- minlength and maxlength  for text type data/value  -->
+        <label for="">Username :</label>
+        <input type="text" required  minlength="5">
+
+        <br>
+        <br>
+
+        <label for="">password</label>
+        <input type="password" required>
+
+        <br>
+        <br>
+
+        <label for="">Country :</label>
+        <input type="text" disabled>
+
+        <br>
+        <br>
+        </div>
+
+        <input type="submit" value="Submit">
+
+        <input type="submit" value="Reset">
+    
+    </form>
+
+    <br>
+    <br>
+
+    <div>
+        <form action="submit">
+
+            <label for="">Email :</label>
+            <input type="Email" required>
+
+            <br>
+            <br>
+
+            <label for="">Password :</label>
+            <input type="password" required min="8" max="12">
+
+            <br>
+            <br>
+
+            <input type="submit" value="enter">
+            <input type="submit" value="cancel">
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- how to construct regular expression -->
+     <!-- in this method always use type = text when asking number form user cause we are using pattern -->
+
+    <div>
+        <form action="submit">
+            <label for="">Mobile No:</label>
+            <input type="text" 
+            required 
+            placeholder="Enter 10 digite mobile number" 
+            pattern="[6-9][0-9]{9}"
+            title="Enter 10 Digit Mobile Number start from 6/7/8/9/">
+
+            <br>
+            <br>
+
+            <label for="">Vehicle Registration Number :</label>
+            <input type="text" 
+            required 
+            placeholder="Please Enter Your Vehicle Registration Number:"
+            pattern="^KA\s?(0[1-9]|[1-6][0-9]|70)\s?[a-zA-Z]{1,2}\s?[0-9]{4}$"
+            title="Number Prefix with KA with RTO Series and Number"
+            >
+
+            <br>
+            <br>
+
+            <label for="username">Username :</label>
+            <input type="text"
+            required
+            id="username"
+            placeholder="Enter Your Username"
+            pattern="^[A-Za-z][A-Za-z0-9_.]{4,19}$"
+            title="Username must start with a letter, be 5–20 characters long, and can contain letters, numbers, underscore (_) or dot (.)">
+
+            <br>
+            <br>
+
+            <input type="submit" value="Get Details">
+        </form>
+    </div>
+
+    <!-- create regular expression for ka vehicle number validation regualr expression -->
+
+    <br>
+    <br>
+
+    <div>
+        <form action="submit">
+            <label for="">Vehicle Registration Number :</label>
+            <input type="text" 
+            required 
+            placeholder="Please Enter Your Vehicle Registration Number:"
+            pattern="^KA\s?(0[1-9]|[1-6][0-9]|70)\s?[a-zA-Z]{1,2}\s?[0-9]{4}$"
+            title="Number Prefix with KA with RTO Series and Number"
+            >
+
+            <br>
+            <br>
+
+            <input type="submit" value="GET Details">
+        </form>
+    </div>
+
+</body>
+</html>  
