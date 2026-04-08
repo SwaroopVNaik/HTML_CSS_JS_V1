@@ -49,6 +49,7 @@ const sayHi_1 = () => {
 
 // An array is a linear data structure, the stores the value in contigioeus memeory locations and can be accessed through index
 
+// array_methods
 // forEach() => ES5 
 // map() = ES5 
 // filter = ES5 
@@ -137,3 +138,15 @@ let emp = {
 
 let {eid, ename, esal} = emp
 console.log(esal);
+
+// create a new array based on exsiting
+
+let b = []; 
+for (let element in a ){
+  b.push(element)
+}
+
+// spread operator -> applicable for arrays and objects
+// what is spread operaor => extract and copy
+// 2) mergeing arrays, objects
+// 3) extending array elements / extending object properties
