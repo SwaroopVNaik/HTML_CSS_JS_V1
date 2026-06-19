@@ -56,11 +56,11 @@ arr.filter(() => {})
 arr.reduce(() => {})
 arr.find(() => {})
 ```
-- map() → new array (modify)
-- filter() → condition match
-- reduce() → single value (sum)
-- find() → first match
-- forEach() → loop only (no return)
+- map() → Creates a new array by modifying each element.
+- filter() → Returns only elements that match a condition.
+- reduce() → Combines all values into a single value.
+- find() → Returns the first matching element.
+- forEach() → Loops through items but does not return a new array.
 
 ## 7) Spread Operator 
 
